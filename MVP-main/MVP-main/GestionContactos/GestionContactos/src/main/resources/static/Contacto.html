@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mis Contactos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #7fdbda; /* Azul agua marina */
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffffff;
+      background-color: #2c3e50;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #2ecc71; /* Verde */
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 10px 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #27ae60;
+    }
+
+    #formularioContacto {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #ecf0f1;
+    }
+
+    a {
+      display: block;
+      margin-top: 20px;
+      text-align: center;
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mis Contactos</h1>
+
+  <button id="btnAgregar">Agregar Contacto</button>
+  
+  <div id="contactosList"></div>
+
+  <div id="formularioContacto" style="display: none;">
+    <h3 id="formTitle">Agregar/Editar Contacto</h3>
+    <form id="contactoForm">
+      <label for="nombres">Nombres:</label>
+      <input type="text" id="nombres" required>
+
+      <label for="apellidos">Apellidos:</label>
+      <input type="text" id="apellidos" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="text" id="telefono" required>
+
+      <button type="submit" id="saveButton">Guardar</button>
+      <button type="button" id="cancelButton">Cancelar</button>
+    </form>
+  </div>
+
+  <a href="Usuario.html">Cerrar sesión</a>
+
+  <script src="Contacto.js"></script>
+</body>
+</html>
